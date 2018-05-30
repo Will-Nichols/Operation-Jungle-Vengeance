@@ -1,7 +1,7 @@
 Author="Task Force Red (Nichols)";
 OnLoadName = "Operation Willing Disaster";
 OnLoadMission = "Tanoa Archipelago; Fiji";
-overviewPicture = "US-military-delivers.jpg";
+overviewPicture = "Flip-SF-2.jpg";
 
 enableDebugConsole = 1;
 cba_settings_hasSettingsFile = 1;
