@@ -1,5 +1,5 @@
 Author="Task Force Red (Nichols)";
-OnLoadName = "Operation Willing Disaster";
+OnLoadName = "Operation Jungle Vengenance";
 OnLoadMission = "Tanoa Archipelago; Fiji";
 overviewPicture = "US-military-delivers.jpg";
 
@@ -19,6 +19,14 @@ class CfgFunctions
 
 class Extended_PreInit_EventHandlers {
 	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
+};
+
+#include "TFRed_AdminTools\config\config.hpp"
+#include "AdminSettings.hpp"
+class cfgFunctions {
+
+	#include "TFRed_AdminTools\config\functions.hpp"
+
 };
 
 class Header
