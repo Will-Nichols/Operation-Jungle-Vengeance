@@ -13,9 +13,9 @@ clearMagazineCargoGlobal _vehicle;
 clearBackpackCargoGlobal _vehicle;
 clearItemCargoGlobal _vehicle;
 
-_vehicle addBackpackCargoGlobal ["VSM_MulticamTropic_Backpack_Kitbag",1];
-_vehicle addBackpackCargoGlobal ["VSM_MulticamTropic_Backpack_Kitbag",1];
-_vehicle addBackpackCargoGlobal ["VSM_MulticamTropic_Backpack_Kitbag",1];
+_vehicle addBackpackCargoGlobal ["VSM_OGA_OD_Carryall",1];
+_vehicle addBackpackCargoGlobal ["VSM_OGA_OD_Carryall",1];
+_vehicle addBackpackCargoGlobal ["VSM_OGA_OD_Carryall",1];
 
 _BP1 = (everyBackpack _vehicle) select 1;  //Weapons Bag
 _BP1  additemcargoglobal ["1Rnd_HE_Grenade_shell",10];
@@ -40,14 +40,14 @@ _BP3  additemcargoglobal ["ACE_wirecutter",1];
 _vehicle addMagazineCargoGlobal ["SMA_30Rnd_556x45_Mk318",25];
 _vehicle addMagazineCargoGlobal ["SMA_150Rnd_762_M80A1",10];
 _vehicle addMagazineCargoGlobal ["SMA_150Rnd_762_M80A1_Mixed",5];
-_vehicle addWeaponCargoGlobal ["SMA_Mk16_GreenQCB",4];
+_vehicle addWeaponCargoGlobal ["SMA_HK416CUSTOMCQBafgB",4];
 _vehicle addWeaponCargoGlobal ["sma_minimi_mk3_762tsb_wdl",2];
 _vehicle addItemCargoGlobal ["DemoCharge_Remote_Mag",4];
 _vehicle addItemCargoGlobal ["ACE_wirecutter",1];
 _vehicle addItemcargoglobal ["sma_gemtech_one_wdl",2];
 _vehicle addItemcargoglobal ["sma_spitfire_03_rds_black",6];
 _vehicle addItemCargoGlobal ["SMA_supp1BOD_556",4];
-_vehicle addItemCargoGlobal ["SMA_SFPEQ_SCARTOP_BLK",4];
+_vehicle addItemCargoGlobal ["SMA_SFPEQ_HKTOP_BLK",4];
 _vehicle setVariable ["loadoutgiven", true];
 }
 else {};
