@@ -1,5 +1,5 @@
 //comment "Exported from Arsenal by Nichols";
-//[this,"variable name"] execVM "loadouts\slotname.sqf";
+//[this,"Molokous8"] execVM "loadouts\Molokous8.sqf";
 
 waitUntil {!isNull player};
 _unit = _this select 0;
@@ -15,13 +15,9 @@ removeHeadgear _this;
 removeGoggles _this;
 
 //comment "Add containers";
-_this forceAddUniform "U_C_IDAP_Man_cargo_F";
-_this addVest "V_Pocketed_black_F";
-for "_i" from 1 to 3 do {_unit addItemToVest "ACE_epinephrine";};
-for "_i" from 1 to 3 do {_unit addItemToVest "ACE_morphine";};
-for "_i" from 1 to 10 do {_unit addItemToVest "ACE_packingBandage";};
-_this addHeadgear "H_HeadSet_orange_F";
-_this addGoggles "G_Aviator";
+_this forceAddUniform "U_C_Poor_1";
+_this addHeadgear "H_Cap_tan";
+_this addGoggles "G_Shades_Blue";
 
 //comment "Add weapons";
 _this addWeapon "Binocular";
@@ -30,8 +26,10 @@ _this addWeapon "Binocular";
 _this linkItem "ItemMap";
 _this linkItem "ItemCompass";
 _this linkItem "ItemWatch";
-_this linkItem "C_UavTerminal";
 
 //comment "Set identity";
-_this setFace "GreekHead_A3_05";
-_this setSpeaker "male02engb";
+_this setFace "TanoanHead_A3_05";
+_this setSpeaker "Male01FRE";
+
+//comment "Set Medical Class";
+_this setVariable ["ace_medical_medicClass",2];

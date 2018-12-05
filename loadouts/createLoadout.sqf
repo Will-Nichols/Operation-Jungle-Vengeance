@@ -3,7 +3,7 @@ params["_unit","_loadout"];
 
 
 _loadoutFormat = format["loadouts\%1.sqf",_loadout];
-_unit setVariable ["SHG_Loadout",_loadoutFormat,false];
+_unit setVariable ["TFR_Loadout",_loadoutFormat,false];
 
 waitUntil {!isNull player};
 _unit execVM _loadoutFormat;

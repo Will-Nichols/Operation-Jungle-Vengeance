@@ -1,37 +1,46 @@
-Author="Task Force Red (Nichols)";
-OnLoadName = "Operation Jungle Vengenance";
+//Author="Nichols (Task Force Red)";
+
+OnLoadName = "Tanoa Takedown";
 OnLoadMission = "Tanoa Archipelago; Fiji";
-overviewPicture = "US-military-delivers.jpg";
-
-enableDebugConsole = 1;
-cba_settings_hasSettingsFile = 1;
-
-respawn=3;
-respawndelay = 45;
-respawnOnStart = 0;
-respawnDialog = 0;
-DisabledAI = true;
-
-class CfgFunctions 
-{
-	#include "vcom\cfgFunctions.hpp"
-};
-
-class Extended_PreInit_EventHandlers {
-	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
-};
-
-#include "TFRed_AdminTools\config\config.hpp"
-#include "AdminSettings.hpp"
-class cfgFunctions {
-
-	#include "TFRed_AdminTools\config\functions.hpp"
-
-};
+overviewPicture = "USSF_leading_patrol.jpg";
 
 class Header
 {
 	gameType = COOP; // Game type, see 'class' columns in the table below
 	minPlayers = 4; //min # of players the mission supports
-	maxPlayers = 54; //max # of players the mission supports
+	maxPlayers = 74; //max # of players the mission supports
+};
+
+enableDebugConsole = 1;
+cba_settings_hasSettingsFile = 1;
+
+respawn = 3;
+respawndelay = 15;
+respawnOnStart = -1;
+respawnDialog = 0;
+DisabledAI = true;
+
+class Extended_PreInit_EventHandlers {
+	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
+};
+
+class CfgFunctions
+{
+	#include "vcom\cfgFunctions.hpp"
+};
+
+class CfgRemoteExec
+{
+	// List of script functions allowed to be sent from client via remoteExec
+	class Functions
+   {
+       mode = 2;
+       jip = 1;
+	   	class vcm_serverask { allowedTargets = 0;jip = 1; };
+		class VCM_PublicScript { allowedTargets = 0;jip = 1; };
+		class BIS_fnc_debugConsoleExec { allowedTargets = 0;jip = 1; };
+		class SpawnScript { allowedTargets = 0;jip = 1; };
+		class enableSimulationGlobal { allowedTargets = 0;jip = 1; };
+		class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };
+   };
 };
