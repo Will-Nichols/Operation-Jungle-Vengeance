@@ -40,7 +40,7 @@ _BP3  additemcargoglobal ["ACE_wirecutter",1];
 _vehicle addMagazineCargoGlobal ["SMA_30Rnd_556x45_Mk318",25];
 _vehicle addMagazineCargoGlobal ["SMA_150Rnd_762_M80A1",10];
 _vehicle addMagazineCargoGlobal ["SMA_150Rnd_762_M80A1_Mixed",5];
-_vehicle addWeaponCargoGlobal ["SMA_HK416CUSTOMCQBafgB",4];
+_vehicle addWeaponCargoGlobal ["hlc_rifle_416D10_st6",4];
 _vehicle addWeaponCargoGlobal ["sma_minimi_mk3_762tsb_wdl",2];
 _vehicle addItemCargoGlobal ["DemoCharge_Remote_Mag",4];
 _vehicle addItemCargoGlobal ["ACE_wirecutter",1];
