@@ -1,7 +1,7 @@
-//nul = this execVM "loadouts\SOCOM_Supplybox.sqf";
+//nul = this execVM "loadouts\SOCOM_supplybox.sqf";
 
 if(!isServer) exitWith {};
-_crate = SOCOM_Supplybox; 
+_crate = SOCOM_supplybox;
 
 		clearMagazineCargoGlobal _crate;
 		clearWeaponCargoGlobal _crate;

@@ -9,7 +9,7 @@ private [
 ];
 
 _player = _this select 0;
-_doc = "PapersPlease_PermitEntry";
+_doc = _doc = "PapersPlease_PermitEntry";"PapersPlease_PassportCivilian";"PapersPlease_PermitVehicle";"PapersPlease_PassportMilitary";"PapersPlease_PassportDiplomat";
 _name = name _player;
 _papers = getText (configFile >> "CfgWeapons" >> _doc >> "displayName");
 _documents = [];

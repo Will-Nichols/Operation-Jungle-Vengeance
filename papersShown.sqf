@@ -15,7 +15,7 @@ _name = name _player;
 //debug
 //systemChat format ["%1 || %2 || %3", name _guard, _name, str _doc];
 
-if (_doc == "PapersPlease_PermitEntry") then {
+if (_doc == _doc = "PapersPlease_PermitEntry";"PapersPlease_PassportCivilian";"PapersPlease_PermitVehicle";"PapersPlease_PassportMilitary";"PapersPlease_PassportDiplomat";) then {
     
     titleText [format ["Thank you for your cooperation, %1.\nHave a good day.", _name], "PLAIN", 0.5];
 	sleep 2;
@@ -25,7 +25,7 @@ if (_doc == "PapersPlease_PermitEntry") then {
 	
 } else {
     
-	titleText [format ["Come back when you have the correct permit.\nHave a good day.", _name], "PLAIN", 0.5];
+	titleText [format ["You may not leave the area, our commander is coming to speak with you.\nYou are not under arrest at this time.", _name], "PLAIN", 0.5];
 	sleep 2;
 	
     detach _player;
