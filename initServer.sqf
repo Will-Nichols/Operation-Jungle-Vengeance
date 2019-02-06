@@ -15,5 +15,3 @@ headlessClients set [(count headlessClients), player];
 publicVariable "headlessClients";
 isHC = true;
 };
-
-call compile preprocessFile "staticData.sqf";
