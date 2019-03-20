@@ -261,10 +261,10 @@ force ace_respawn_savePreDeathGear = false;
 
 // ACE Scopes
 force ace_scopes_correctZeroing = true;
-force ace_scopes_deduceBarometricPressureFromTerrainAltitude = false;
+force ace_scopes_deduceBarometricPressureFromTerrainAltitude = true;
 force ace_scopes_defaultZeroRange = 300;
 force ace_scopes_enabled = true;
-force ace_scopes_forceUseOfAdjustmentTurrets = false;
+force ace_scopes_forceUseOfAdjustmentTurrets = true;
 force ace_scopes_overwriteZeroRange = true;
 force ace_scopes_simplifiedZeroing = false;
 force ace_scopes_useLegacyUI = true;
@@ -420,12 +420,12 @@ Achilles_var_O_CNAirborne = true;
 Achilles_var_OPF_F = false;
 Achilles_var_OPF_T_F = false;
 Achilles_var_OPF_V_F = false;
-force Achilles_var_PLA_Faction = true;
+force Achilles_var_PLA_Faction = false;
 Achilles_var_PLA_UN_Faction = false;
-Achilles_var_PLAAF_Faction = true;
-Achilles_var_PLAARF_Faction = true;
-Achilles_var_PLADES_Faction = true;
-Achilles_var_PLAN_Faction = true;
+Achilles_var_PLAAF_Faction = false;
+Achilles_var_PLAARF_Faction = false;
+Achilles_var_PLADES_Faction = false;
+Achilles_var_PLAN_Faction = false;
 Achilles_var_rhs_faction_socom = true;
 Achilles_var_rhs_faction_usaf = true;
 Achilles_var_rhs_faction_usarmy = true;
@@ -434,7 +434,7 @@ Achilles_var_rhs_faction_usarmy_wd = true;
 Achilles_var_rhs_faction_usmc = true;
 Achilles_var_rhs_faction_usn = true;
 Achilles_var_Virtual_F = false;
-Achilles_var_VME_PLA = true;
+Achilles_var_VME_PLA = false;
 force Achilles_var_VSM_GP = false;
 
 // Achilles - Curator Vision Modes
